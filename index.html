@@ -18,7 +18,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <!-- Bootstrap CSS -->    
+    <!-- Bootstrap CSS -->
+
+    <!-- Owl Carousel css  -->
+    <link rel="stylesheet" href="./css/owl/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl/owl.theme.default.css">
+    <!-- Owl Carousel  css-->
 
     <!-- Main CSS  -->
     <link rel="stylesheet" href="./css/style.css">
@@ -28,7 +33,25 @@
 
 <body>
     <header></header>
-    <section class="carousel"></section>
+    <section class="poochcare__carousel">
+        <div id="slider1">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./img/banner.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/banner2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/banner3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/banner4.jpg" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </section>
     <section class="about"></section>
     <section class="portfolio"></section>
     <section class="number"></section>
@@ -37,15 +60,34 @@
     <section class="testimonials"></section>
     <section class="updated"></section>
     <footer></footer>
-    
+
     <div class="backtotop"></div>
     <div class="btfuntion"></div>
 
     <!-- Bootstrap Js  -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
     <!-- Bootstrap Js  -->
 
+    <!-- Owl Carousel Js  -->
+    <script src="./js/owl/owl.carousel.js"></script>
+    <!-- Owl Carousel Js  -->
+
+    <!-- Js slider1 poochcare__carousel -->
+    <script>
+        $(document).ready(function() {
+    $('#slider1 .owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        items: 1
+    })
+});
+    </script>
 </body>
 
 </html>
