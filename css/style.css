@@ -181,4 +181,14 @@ select {
     max-width: 100%;
     height: auto;
   }
-    
+
+.poochcare__carousel{
+    width: 100%;
+    height: 1000px;
+} 
+.pc_carousel_content{
+    position: relative;
+}
+.pc_carousel_content .item img{
+    height: 100%;
+}
