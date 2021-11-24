@@ -49,7 +49,6 @@ h1,
 }
 
 @media (max-width: 1200px) {
-
   h1,
   .h1 {
     font-size: calc(1.375rem + 1.5vw);
@@ -62,7 +61,6 @@ h2,
 }
 
 @media (max-width: 1200px) {
-
   h2,
   .h2 {
     font-size: calc(1.325rem + 0.9vw);
@@ -75,7 +73,6 @@ h3,
 }
 
 @media (max-width: 1200px) {
-
   h3,
   .h3 {
     font-size: calc(1.3rem + 0.6vw);
@@ -88,7 +85,6 @@ h4,
 }
 
 @media (max-width: 1200px) {
-
   h4,
   .h4 {
     font-size: calc(1.275rem + 0.3vw);
@@ -121,7 +117,6 @@ h6,
     font-size: calc(1.725rem + 5.7vw);
   }
 }
-
 
 p {
   margin-top: 0;
@@ -243,7 +238,7 @@ input {
 button,
 .btn {
   cursor: pointer !important;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 .btn {
@@ -263,7 +258,8 @@ button,
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 button,
@@ -278,7 +274,7 @@ select {
   text-transform: capitalize;
   font-weight: 400;
   transition: 0.3s ease-in;
-  border-radius: var(--border-radius);
+  border-radius: 10px;
 }
 
 .border-btn {
@@ -292,15 +288,15 @@ select {
   font-size: 18px;
   line-height: 28px;
   text-transform: capitalize;
-  font-weight:400;
+  font-weight: 400;
   transition: 0.3s ease-in;
-  border-radius: var(--border-radius);
+  border-radius: 10px;
   background-color: #fff;
-  color: var(--primary-color);
+  color: #189A46;
 }
-.border-btn:hover{
-  color: var(--primary-color);
-  background:#fff;
+.border-btn:hover {
+  color: #189A46;
+  background: #fff;
 }
 .text-left {
   text-align: left !important;
@@ -314,37 +310,131 @@ select {
   text-align: center !important;
 }
 
-
 select {
   word-wrap: normal;
 }
 
 .img-fluid {
-    max-width: 100%;
-    height: auto;
-  }
-  .img-thumbnail {
-    padding: 0.25rem;
-    background-color: #fff;
-    border: 1px solid #dee2e6;
-    border-radius: 0.25rem;
-    max-width: 100%;
-    height: auto;
-  }
+  max-width: 100%;
+  height: auto;
+}
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
 
-.poochcare__carousel{
-    width: 100%;
-    height: 1000px;
-} 
-.pc_carousel_content{
-    position: relative;
-}
-.pc_carousel_content .item img{
-    height: 100%;
-}
-.item__bg1{
+.item__bg1 {
   background-image: url(../img/banner1.jpg);
   height: 100vh;
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 0;
+  display: grid;
+  align-items: center;
+  padding: 3em 0;
 }
+
+.banner-info-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.poochcare__carousel h5 {
+  font-size: 66px;
+  max-width: 700px;
+  line-height: 76px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: capitalize;
+}
+.poochcare__carousel p {
+  color: #fff;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 30px;
+  opacity: 0.9;
+}
+.owl-dots {
+  margin-top: 0px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 30px;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 8px;
+  background: #fff;
+  display: block;
+  transition: opacity 0.2s ease;
+  border-radius: 25px;
+  position: relative;
+  opacity: 0.9;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #189a46;
+  width: 30px;
+  height: 10px;
+}
+
+/*-- container --*/
+.container {
+  width: 100%;
+  height: 400px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 5147px) {
+  .container {
+    max-width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1478px) {
+  .container {
+    max-width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/*-- //container --*/
