@@ -41,6 +41,9 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  /* thêm style và độ đậm */
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
 }
 
 h1,
@@ -384,6 +387,53 @@ select {
   width: 30px;
   height: 10px;
 }
+
+/* header */
+header{
+  background-color: #fff;
+  padding: 0px;
+    transition: all 0.4s ease 0s;
+    height: 90px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+}
+.fixed-top{
+  top: 40px ;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar-expand-lg .navbar-nav .nav-item {
+  padding: 0 12px;
+  transition: all 0.5s ease;
+  position: relative;
+}
+.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+  color: #000c04 ;
+  padding: 14px 0;
+  font-size: 1.2em;
+  font-weight: 400;
+  position: relative;
+}
+#Poochcare .nav-item::after{
+content: "";
+width: 0;
+height: 3px;
+background-color: #35a22c;
+display: block;
+transition: all .5s;
+}
+#Poochcare .nav-item:hover::after{
+  width: 100%;
+}
+#Poochcare .nav-link:hover{
+  color: #189a46;
+}
+#active{
+  color: #189a46;
+}
+
 
 /*-- container --*/
 .container {
