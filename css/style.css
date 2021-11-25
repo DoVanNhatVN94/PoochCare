@@ -39,8 +39,11 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin: 0;
+  padding: 0;
+  color: #000c04;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
 }
 
 h1,
@@ -376,6 +379,7 @@ select {
 
 .item__pc__content {
   width: 100%;
+  margin-top: 55px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
