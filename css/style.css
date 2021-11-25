@@ -42,7 +42,10 @@ h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   /* thêm style và độ đậm */
-  font-family: 'Jost', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000c04;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
 }
 
@@ -102,6 +105,9 @@ h5,
 h6,
 .h6 {
   font-size: 1rem;
+}
+p {
+  font-size: 1.2em;
 }
 
 .lead {
@@ -295,10 +301,10 @@ select {
   transition: 0.3s ease-in;
   border-radius: 10px;
   background-color: #fff;
-  color: #189A46;
+  color: #189a46;
 }
 .border-btn:hover {
-  color: #189A46;
+  color: #189a46;
   background: #fff;
 }
 .text-left {
@@ -312,7 +318,10 @@ select {
 .text-center {
   text-align: center !important;
 }
-
+.ml-lg-auto,
+.mx-lg-auto {
+  margin-left: auto !important;
+}
 select {
   word-wrap: normal;
 }
@@ -330,23 +339,56 @@ select {
   height: auto;
 }
 
-.item__bg1 {
-  background-image: url(../img/banner1.jpg);
-  height: 100vh;
+/* poochcare__carousel  */
+
+.pc_carousel_content {
+  position: relative;
+}
+
+.item__pc__bg {
+  min-height: calc(100vh - 40px);
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   z-index: 0;
-  display: grid;
-  align-items: center;
+  /* display: grid;
+  align-items: center; */
   padding: 3em 0;
 }
+.item__pc__bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #0c0c0c;
+  opacity: 0.6;
+}
+.pc__bg__01 {
+  background-image: url(../img/banner1.jpg);
+}
+.pc__bg__02 {
+  background-image: url(../img/banner2.jpg);
+}
+.pc__bg__03 {
+  background-image: url(../img/banner3.jpg);
+}
+.pc__bg__04 {
+  background-image: url(../img/banner4.jpg);
+}
 
-.banner-info-bg {
+.item__pc__content {
+  width: 100%;
+  margin-top: 55px;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
+}
+.bg-mw700 {
+  max-width: 700px;
 }
 .poochcare__carousel h5 {
   font-size: 66px;
