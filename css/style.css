@@ -39,11 +39,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-  padding: 0;
-  color: #000c04;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 h1,
@@ -74,8 +71,8 @@ h3,
 .h3 {
   font-size: 1.75rem;
 }
-
-@media (max-width: 1200px) {
+/* screen and bài cô có nhưng đây không có */
+@media  (max-width: 1200px) {
   h3,
   .h3 {
     font-size: calc(1.3rem + 0.6vw);
@@ -459,9 +456,10 @@ a:hover {
   max-width: 700px;
 }
 .poochcare__carousel h5 {
-  font-size: 52px;
-  max-width: 100%;
-  line-height: 52px;
+
+  font-size: 66px;
+  /* max-width: 700px; */
+  line-height: 76px;
   font-weight: 700;
   color: #fff;
   text-transform: capitalize;
@@ -498,6 +496,7 @@ a:hover {
   height: 10px;
 }
 
+
 /* POOCHARE__ABOUT  */
 .poochcare__about .bottom-ab-grids.align-items-center {
   margin: 0 auto;
@@ -506,6 +505,159 @@ a:hover {
 }
 
 /*END POOCHARE__ABOUT  */
+
+@media (max-width:1200px) {
+  .poochcare__carousel h5{
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  .poochcare__carousel p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .poochcare__carousel h5{
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .poochcare__carousel .owl-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .poochcare__carousel p {
+    font-size: 16px;
+  }
+  .item__pc__bg  {
+      min-height:580px;
+  }
+}
+
+@media (max-width:600px) {
+  .item__pc__bg{
+      min-height:500px;
+  }
+}
+
+@media (max-width:480px) {
+  .poochcare__carousel p {
+    font-size:32px;
+    line-height:42px;
+  }
+  .item__pc__bg{
+      min-height: 480px;
+  }
+}
+@media (max-width:440px) {
+  .item__pc__bg{
+      min-height: 440px;
+    }
+}
+
+/* header */
+header{
+    background-color: #fff;
+    padding: 0px;
+    transition: all 0.4s ease 0s;
+    height: 90px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+}
+#Poochcare .container{
+  height: auto;
+}
+.navbar .navbar-brand{
+    margin: 0;
+    padding: 0;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #189a46;
+}
+.navbar h1{
+    margin: 0;
+    padding: 0;
+    color: var(--heading-color);
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+}
+.fixed-top{
+    top: 40px ;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar-expand-lg .navbar-nav .nav-item {
+  padding: 0 12px;
+  transition: all 0.5s ease;
+  position: relative;
+}
+.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+  color: #000c04 ;
+  padding: 14px 0;
+  font-size: 1.2em;
+  font-weight: 400;
+  position: relative;
+}
+#Poochcare .nav-item::after{
+content: "";
+width: 0;
+height: 3px;
+background-color: #35a22c;
+display: block;
+transition: all .5s;
+}
+#Poochcare .nav-item:hover::after{
+  width: 100%;
+}
+#Poochcare .nav-link:hover{
+  color: #189a46;
+}
+#active{
+  color: #189a46;
+}
+.gg-moon{
+  overflow: hidden;
+    position: relative;
+    transform: rotate(-135deg) scale(var(--ggs, 1));
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: block;
+    font-style: italic;
+}
+.gg-moon::after{
+  content: "";
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    top: 8px;
+    left: 2px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+@media screen and (max-width:992px) { 
+  #Poochcare .navbar-toggler{
+    background-color: #189a46;
+  }
+  #Poochcare .nav-item:hover::after{
+    width: 0;
+  }
+  #PoochNav{
+    background-color: #fff;
+  }
+}
 
 /*-- container --*/
 .container {
