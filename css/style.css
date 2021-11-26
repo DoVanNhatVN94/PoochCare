@@ -392,7 +392,7 @@ select {
 }
 .poochcare__carousel h5 {
   font-size: 66px;
-  max-width: 700px;
+  /* max-width: 700px; */
   line-height: 76px;
   font-weight: 700;
   color: #fff;
@@ -428,6 +428,58 @@ select {
   background: #189a46;
   width: 30px;
   height: 10px;
+}
+
+@media (max-width:1200px) {
+  .poochcare__carousel h5{
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  .poochcare__carousel p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .poochcare__carousel h5{
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .poochcare__carousel .owl-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .poochcare__carousel p {
+    font-size: 16px;
+  }
+  .item__pc__bg  {
+      min-height:580px;
+  }
+}
+
+@media (max-width:600px) {
+  .item__pc__bg{
+      min-height:500px;
+  }
+}
+
+@media (max-width:480px) {
+  .poochcare__carousel p {
+    font-size:32px;
+    line-height:42px;
+  }
+  .item__pc__bg{
+      min-height: 480px;
+  }
+}
+@media (max-width:440px) {
+  .item__pc__bg{
+      min-height: 440px;
+    }
 }
 
 /* header */
@@ -475,6 +527,7 @@ transition: all .5s;
 #active{
   color: #189a46;
 }
+
 
 
 /*-- container --*/
