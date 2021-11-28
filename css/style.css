@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 body,
 html {
@@ -314,6 +316,7 @@ select {
   color: #189a46;
   background: #fff;
 }
+
 .text-left {
   text-align: left !important;
 }
@@ -665,6 +668,42 @@ header {
     background-color: #fff;
   }
 }
+
+/* End Header  */
+
+/* POOCHARE__FEATURE  */
+.poochcare__feature {
+  background-color: rgba(147, 107, 232, 0.05);
+}
+.poochcare__feature .area-box {
+  padding: 40px 30px;
+  transition: all 0.5s ease 0s;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 30px;
+}
+.poochcare__feature .area-box:hover {
+  background: rgb(147 107 232 / 5%);
+}
+.poochcare__feature .area-box h4 a {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  display: block;
+  color: var(--heading-color);
+}
+.poochcare__feature .area-box h4 a:hover {
+  color: #189a46;
+}
+
+.poochcare__feature .icon span.fa {
+  color: #189a46;
+  font-size: 30px;
+}
+
+/* END POOCHARE__FEATURE  */
 
 /*-- container --*/
 .container {
