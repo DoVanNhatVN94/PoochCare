@@ -790,6 +790,131 @@ header {
 
 /*End Number */
 
+/* POOCHCARE__TESTIMONIALS */
+.poochcare__testimonials {
+  background: rgb(147 107 232 / 5%);
+}
+.poochcare__testimonials .testimonial-width {
+  max-width: 1050px;
+  margin: auto;
+}
+
+.poochcare__testimonials .testimonial {
+  display: block;
+  margin: 0;
+  padding: 40px 30px;
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow: 0 25px 98px 0 rgba(19, 19, 19, 0.03);
+}
+
+.poochcare__testimonials .testi-des {
+  display: flex;
+  text-align: center;
+}
+.poochcare__testimonials .testimonial blockquote {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  position: relative;
+  margin-bottom: 1.5em;
+}
+.poochcare__testimonials blockquote q {
+  font-size: 1.2em;
+  line-height: 28px;
+  color: #696969;
+}
+
+.poochcare__testimonials blockquote q::before {
+  font-size: 50px;
+  color: #189a46;
+  line-height: 0.8;
+  padding-top: 8px;
+  font-weight: 600;
+  display: inline-block;
+  font-family: "Merriweather", serif;
+}
+.poochcare__testimonials .testi-des {
+  display: flex;
+  text-align: center;
+}
+.poochcare__testimonials .test-img {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50%;
+}
+.poochcare__testimonials .testimonial img {
+  width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+.poochcare__testimonials .testimonial .peopl {
+  margin: 0;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.poochcare__testimonials .testimonial .peopl h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+.poochcare__testimonials p.indentity {
+  color: #777;
+  font-size: 17px;
+  font-style: normal;
+  margin-bottom: 0;
+  text-align: left;
+  opacity: 0.8;
+}
+.testimonial-carousel.owl-carousel.owl-theme .owl-dots {
+  position: inherit;
+  left: 0px;
+  right: 0px;
+  bottom: 30px;
+  margin-top: 80px;
+}
+.testimonial-carousel.owl-carousel.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 10px;
+  background: #d8d8d8;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 0.2s ease;
+  border-radius: 25px;
+  position: relative;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-dots .owl-dot.active span,
+.testimonial-carousel.owl-carousel.owl-theme .owl-dots .owl-dot:hover span {
+  background: #189a46;
+  width: 30px;
+  height: 10px;
+}
+@media (max-width: 667px) {
+  .testimonial-carousel.owl-carousel.owl-theme .owl-dots {
+    position: inherit;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
+    margin-top: 80px;
+    display: none;
+  }
+}
+
+/*END POOCHCARE__TESTIMONIALS */
+
 /*-- container --*/
 .container {
   width: 100%;
