@@ -14,9 +14,11 @@ html {
   background: #fff;
   color: #696969;
 }
-body a, button, .btn {
+body a,
+button,
+.btn {
   cursor: pointer !important;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 header,
 nav,
@@ -203,7 +205,7 @@ p {
   font-size: 1.2em;
   line-height: 28px;
   color: #696969;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 a {
@@ -717,6 +719,76 @@ header {
 }
 
 /* END POOCHARE__FEATURE  */
+
+/* POOCHCARE__NUMBER */
+.poochcare__number {
+  background-color: #189a46;
+}
+.number__info {
+  text-align: center;
+  padding: 0;
+  border-top: none;
+  border-bottom: none;
+}
+.number__info p {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.number__info h4 {
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #fff;
+  margin-top: 10px;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.number__info span.fa {
+  font-size: 2.5em;
+  color: #fff;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .number__info p {
+    font-size: 40px !important;
+    line-height: 50px;
+  }
+
+  .number__info h4 {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 737px) {
+  .number__info {
+    padding: 0 5px !important;
+  }
+
+  .number__info p {
+    font-size: 35px !important;
+    line-height: 38px;
+    margin-top: 20px;
+  }
+
+  .number__info h4 {
+    font-size: 17px !important;
+  }
+}
+
+@media (max-width: 415px) {
+  .number__info span.fa {
+    font-size: 2em !important;
+  }
+}
+
+/*End Number */
 
 /*-- container --*/
 .container {
