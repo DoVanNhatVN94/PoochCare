@@ -178,7 +178,7 @@
     </section>
 
     <!-- Win -->
-    <div class="poochcare__feature py-5" id="feature">
+    <section class="poochcare__feature py-5" id="feature">
         <div class="container py-lg-5 py-md-4">
             <div class="grids-area-hny main-cont-wthree-fea row">
                 <div class="col-lg-4 col-sm-6 grids-feature">
@@ -249,64 +249,101 @@
                 </div>
             </div>
         </div>
-        </section>
-        <section class="poochcare__service"></section>
-        <section class="poochcare__number"></section>
-        <!-- Win -->
-        <section class="poochcare__plan"></section>
-        <!-- Win -->
-        <section class="poochcare__nutrition"></section>
-        <section class="poochcare__testimonials"></section>
-        <!-- Win -->
-        <section class="poochcare__updated"></section>
-        <!-- Win -->
-        <footer></footer>
+    </section>
+    <section class="poochcare__service"></section>
+    <!-- NUMBER  -->
+    <section class="poochcare__number py-5" id="number">
+        <div class="container py-lg-0 py-3">
+            <div class="row pb-lg-3">
+                <div class="col-lg-3 col-6 number__info">
+                  <p class="counter">730</p>
+                  <h4>Happy Clients</h4>
+                </div>
+                <div class="col-lg-3 col-6 number__info">
+                  <p class="counter">80</p>
+                  <h4>Professionals</h4>
+                </div>
+                <div class="col-lg-3 col-6 number__info mt-lg-0 mt-5">
+                  <p class="counter">812</p>
+                  <h4>Adopted Pets</h4>
+                </div>
+                <div class="col-lg-3 col-6 number__info mt-lg-0 mt-5">
+                  <p class="counter">90</p>
+                  <h4>Awards</h4>
+                </div>
+              </div>
+        </div>
+    </section>
+    <!-- Win -->
+    <section class="poochcare__plan"></section>
+    <!-- Win -->
+    <section class="poochcare__nutrition"></section>
+    <section class="poochcare__testimonials"></section>
+    <!-- Win -->
+    <section class="poochcare__updated"></section>
+    <!-- Win -->
+    <footer></footer>
 
-        <div class="backtotop"></div>
-        <div class="btfuntion"></div>
-        <div class="darkMode"></div>
-        <!-- Bootstrap Js  -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-            crossorigin="anonymous"></script>
-        <!-- Bootstrap Js  -->
+    <div class="backtotop"></div>
+    <div class="btfuntion"></div>
+    <div class="darkMode"></div>
+    <!-- Bootstrap Js  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Js  -->
 
-        <!-- Owl Carousel Js  -->
-        <script src="./js/owl/owl.carousel.js"></script>
-        <!-- Owl Carousel Js  -->
+    <!-- Owl Carousel Js  -->
+    <script src="./js/owl/owl.carousel.js"></script>
+    <!-- Owl Carousel Js  -->
 
-        <!-- Js slider1 poochcare__carousel -->
-        <script>
-            $(document).ready(function () {
-                $('#slider1 .owl-carousel').owlCarousel({
-                    loop: true,
-                    margin: 0,
-                    nav: false,
-                    responsiveClass: true,
-                    autoplay: true,
-                    autoplayTimeout: 5000,
-                    autoplaySpeed: 1000,
-                    autoplayHoverPause: false,
-                    responsive: {
-                        0: {
-                            items: 1,
-                        },
-                        480: {
-                            items: 1,
-                        },
-                        667: {
-                            items: 1,
-                        },
-                        1000: {
-                            items: 1,
-                        }
+    <!-- Js slider1 poochcare__carousel -->
+    <script>
+        $(document).ready(function () {
+            $('#slider1 .owl-carousel').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: false,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    480: {
+                        items: 1,
+                    },
+                    667: {
+                        items: 1,
+                    },
+                    1000: {
+                        items: 1,
                     }
-                })
+                }
             })
-        </script>
+        })
+    </script>
+
+    <!-- CountUp - Number -->
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/jquery.countup.min.js"></script>
+    <script>
+        //Gọi thư viện countUp
+        $('.counter').countUp({
+            'time': 3000,
+            'delay': 10
+        });
+    </script>
+
+    <!-- Back to Top -->
+    <script src="./js/util.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
