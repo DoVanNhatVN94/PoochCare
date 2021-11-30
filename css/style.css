@@ -406,6 +406,7 @@ select {
   font-weight: 600;
   line-height: 48px;
   text-transform: capitalize;
+  font-family: "Jost", sans-serif;
 }
 a.read {
   font-size: 17px;
@@ -597,49 +598,48 @@ header {
   height: auto;
 }
 
-#Poochcare .dropdown-menu{
+#Poochcare .dropdown-menu {
   border-radius: 10px;
   border: 1px solid #ddd;
   min-width: 13rem;
   padding: 1rem 0 0.3rem;
   transform: translateX(-34px);
 }
-#Poochcare .dropdown-menu::before{
-  content: '';
-    width: 14px;
-    height: 14px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    display: block;
-    border-right: none;
-    border-bottom: none;
-    transform: translateX(-50%) rotateZ(45deg);
-    position: absolute;
-    top: -7px;
-    left: 49%;
-    z-index: 1001;
+#Poochcare .dropdown-menu::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  display: block;
+  border-right: none;
+  border-bottom: none;
+  transform: translateX(-50%) rotateZ(45deg);
+  position: absolute;
+  top: -7px;
+  left: 49%;
+  z-index: 1001;
 }
-.navbar .navbar-brand{
-    margin: 0;
-    padding: 0;
-    font-size: 34px;
-    font-weight: 600;
-    text-transform: capitalize;
-    color: #189a46;
+.navbar .navbar-brand {
+  margin: 0;
+  padding: 0;
+  font-size: 34px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #189a46;
 }
-.navbar h1{
-    margin: 0;
-    padding: 0;
-    color: var(--heading-color);
-    font-family: 'Jost', sans-serif;
-    font-weight: 600;
+.navbar h1 {
+  margin: 0;
+  padding: 0;
+  color: var(--heading-color);
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
 }
-.fixed-top{
-    top: 40px ;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-
+.fixed-top {
+  top: 40px;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 .navbar-expand-lg .navbar-nav .nav-item {
   padding: 0 12px;
@@ -654,33 +654,32 @@ header {
   position: relative;
 }
 
-#Poochcare .navbar-toggler-icon::before{
+#Poochcare .navbar-toggler-icon::before {
   content: "\f0c9";
 }
-#Poochcare .dropdown-item::after{
+#Poochcare .dropdown-item::after {
   content: "";
-width: 0;
-height: 1px;
-background-color: #35a22c;
-display: block;
-transition: all .5s;
+  width: 0;
+  height: 1px;
+  background-color: #35a22c;
+  display: block;
+  transition: all 0.5s;
 }
 
-#Poochcare .dropdown-item:hover::after{
+#Poochcare .dropdown-item:hover::after {
   width: 56%;
 }
-#Poochcare .dropdown-item:hover{
+#Poochcare .dropdown-item:hover {
   color: #189a46;
 }
 
-#Poochcare .nav-item::after{
-content: "";
-width: 0;
-height: 3px;
-background-color: #35a22c;
-display: block;
-transition: all .5s;
-
+#Poochcare .nav-item::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #35a22c;
+  display: block;
+  transition: all 0.5s;
 }
 #Poochcare .nav-item:hover::after {
   width: 100%;
@@ -727,17 +726,16 @@ transition: all .5s;
   #PoochNav {
     background-color: #fff;
   }
-  .gg-moon{
+  .gg-moon {
     position: absolute;
     right: 97px;
     top: 13px;
     align-items: center;
   }
-  
 }
-/* portfolio */
+/* poochcare__service */
 
-.sub-title{
+.sub-title {
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
@@ -745,23 +743,17 @@ transition: all .5s;
   letter-spacing: 1px;
   color: #f53626;
 }
-.hny-title{
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  text-transform: capitalize;
-  font-family: 'Jost', sans-serif;
-}
-.portfolio__text p{
+
+.service__text p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24.5px;
   margin: 15px 0 35px 0;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   color: #696969;
 }
-.portfolio__text li{
+.service__text li {
   font-style: normal;
   font-size: 16px;
   line-height: 26px;
@@ -770,9 +762,9 @@ transition: all .5s;
   font-weight: 600;
   list-style: none;
   outline: none;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
-.portfolio__text .fa{
+.service__text .fa {
   color: #189a46;
   margin-right: 12px;
   background-color: rgb(147 107 232 / 0.05%);
@@ -781,10 +773,10 @@ transition: all .5s;
   border-radius: 50%;
   display: inline-block;
 }
-body img{
+body img {
   border-radius: 10px;
 }
-.portfolio__content .portfolio__text{
+.service__content .service__text {
   align-self: center;
 }
 
