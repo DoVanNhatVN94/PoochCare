@@ -718,8 +718,12 @@ transition: all .5s;
   border-radius: 50%;
 }
 @media screen and (max-width: 992px) {
-  #Poochcare .navbar-toggler {
+  #Poochcare .navbar-toggler{
+    padding: 0rem 0rem;
+    border: 0 none;
+    font-size: 22px;
     background-color: #189a46;
+    color: #fff;
   }
   #Poochcare .nav-item:hover::after {
     width: 0;
@@ -729,9 +733,9 @@ transition: all .5s;
   }
   .gg-moon{
     position: absolute;
-    right: 97px;
-    top: 13px;
-    align-items: center;
+    right: 72px;
+    top: 22px;
+    align-self: center;
   }
   
 }
@@ -775,11 +779,12 @@ transition: all .5s;
 .portfolio__text .fa{
   color: #189a46;
   margin-right: 12px;
-  background-color: rgb(147 107 232 / 0.05%);
+  background-color: rgb(147 107 232 / 5%);
   font-size: 10px;
   padding: 8px;
   border-radius: 50%;
   display: inline-block;
+  
 }
 body img{
   border-radius: 10px;
@@ -1018,6 +1023,173 @@ body img{
 }
 
 /*END POOCHCARE__TESTIMONIALS */
+
+/* PLAN */
+.poochcare__plan{
+  background: rgba(147, 107, 232, 0.05);
+}
+.plan__list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 5% auto;
+  margin-top: 0;
+  width: 90%;
+}
+.plan__content .plan__item{
+  background-color: #fff;
+  border-radius: 6px;
+  align-self: center;
+}
+.plan__bg{
+  padding: 3.5em 2.5em;
+  border-right: 0;
+}
+.plan__top{
+  text-align: center;
+}
+.plan__top h6{
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+  font-family: 'Jost', sans-serif;
+}
+.plan__top h4{
+  font-size: 40px;
+  line-height: 45px;
+  margin: 15px 0 20px;
+  text-align: center;
+  font-weight: 600;
+  color: #189a46;
+  font-family: "Jost", sans-serif;
+}
+.plan__top h4 label{
+  font-size: 25px;
+  vertical-align: text-top;
+  font-family: "Jost", sans-serif;
+  outline: none;
+}
+.plan__top h4 span{
+  font-size: 16px;
+  line-height: 25px;
+  color: #999;
+  font-weight: 400;
+}
+.plan__bot{
+  text-align: center;
+  padding-top: 1em;
+}
+.plan__bot-bot ul.link{
+  min-height: 120px;
+}
+.plan__bot-bot ul.link li{
+  list-style: none;
+  margin-bottom: 5px;
+  color: #304659;
+}
+.plan__bot-bot ul.link li p{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: normal;
+  align-self: center;
+  padding-top: 6px;
+}
+.plan__button{
+  margin-top: 2em;
+}
+.item-2 .plan__bga .plan__top{
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background: #189a46;
+  padding: 3.5em 2.5em;
+}
+.item-2 .plan__bga .plan__top h4{
+  color: #fff;
+}
+.item-2 .plan__bga .plan__bot{
+  padding: 2em 2.5em 3.5em;
+  background-color: #ffffff;
+}
+.item-2 .plan__top h5{
+  font-size: 15px;
+  line-height: 20px;
+  color: #189a46;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #fff;
+  border-radius: 10px;
+}
+.item-2 .plan__top h6{
+  color: #fff;
+}
+@media screen and (max-width: 991px) {
+  .plan__button{
+    display: none;
+  }
+  
+}
+@media screen and (max-width: 800px) {
+  .plan__list{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    margin: 50px auto 0;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .plan__list{
+    grid-gap: 20px;
+    margin: 30px auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .plan__list{
+    width: 75%;
+  }
+}
+/* END PLAN */
+
+/* POOCHCARE__UPDATE */
+.subscribe{
+  max-width: 650px;
+}
+.poochcare__updated .subscribe__form input{
+  font-size: 16px;
+  color: #696969;
+  border-radius: 10px;
+  padding: 0px 20px;
+  flex-basis: 70%;
+  background: #fff;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.poochcare__updated .subscribe__form input:focus{
+  border: 1px solid #189a46;
+  box-shadow: none;
+}
+.poochcare__updated .subscribe__form button{
+  flex-basis: 27%;
+  box-shadow: none;
+  background-color: #189a46;
+  border-color: #189a46;
+}
+@media screen and (max-width: 667px) {
+  .poochcare__updated .subscribe__form button{
+    flex-basis: 100%;
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+  }
+  
+}
 
 /*-- container --*/
 .container {
