@@ -1128,6 +1128,12 @@ body img{
 .item-2 .plan__top h6{
   color: #fff;
 }
+.poochcare__plan .plan__list .active{
+  z-index: 1;
+  margin: 0;
+  box-shadow: 0 10px 30px 0 rgb(17 17 17 / 9%);
+  border-radius: 6px;
+}
 @media screen and (max-width: 991px) {
   .plan__button{
     display: none;
@@ -1188,8 +1194,83 @@ body img{
     width: 100%;
     margin-top: 16px;
   }
-  
 }
+
+/* END POOCHCARE__UPDATE */
+
+/* FOOTER */
+
+.poochcare__footer{
+  background-color:#111 ;
+}
+.poochcare__footer h6{
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.poochcare__footer li{
+  list-style: none;
+  margin-bottom: 5px;
+}
+.poochcare__footer li p{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #696969;
+}
+.poochcare__footer li a{
+  font-weight: normal;
+  font-size: 16px;
+  color: #696969;
+  line-height: 28px;
+}
+.poochcare__footer li a:hover{
+  color: white;
+  text-decoration: underline;
+}
+.poochcare__footer .icon{
+  margin-top: 3px;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.poochcare__footer .icon li{
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+.poochcare__footer .icon li a{
+  font-weight: normal;
+  font-size: 16px;
+  color: #696969;
+}
+.poochcare__footer .icon li a:hover{
+  color: white;
+  text-decoration: underline;
+}
+.poochcare__footer .mid-footer{
+  background: #111;
+  border-top: 1px solid rgba(103, 99, 99, 0.14);
+}
+.poochcare__footer .mid-footer p{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #696969;
+  margin-bottom: 0;
+}
+.poochcare__footer .mid-footer p a{
+  color: #f53626;
+  opacity: 0.9;
+}
+.poochcare__footer .mid-footer p a:hover{
+  text-decoration: underline;
+}
+
+/* END FOOTER */
+
 
 /*-- container --*/
 .container {
