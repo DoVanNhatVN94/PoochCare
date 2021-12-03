@@ -27,7 +27,7 @@
   --secondary-color: #f53626;
   --font-color: #afafaf;
   --bg-color: #151515;
-  --heading-color: #000c04;
+  --heading-color: #ddd;
   --border-color: #333;
   --border-light: #444;
   --nav-color: #fff;
@@ -74,7 +74,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: var(--font-color);
   text-align: left;
   background-color: var(--dropdown-color);
 }
@@ -688,12 +688,20 @@ header {
   transition: all 0.5s ease;
   position: relative;
 }
+
 .navbar-expand-lg .navbar-nav .nav-item .nav-link {
-  color: var(--heading-color);
-  padding: 14px 0;
-  font-size: 1.2em;
-  font-weight: 400;
-  position: relative;
+  text-transform: capitalize;
+    transition: all 0.5s ease;
+    padding: 14px 0;
+    font-size: 1.2em;
+    font-weight: 400;
+    position: relative;
+    color: var(--heading-color);
+}
+.navbar-expand-lg .navbar-nav .nav-link span.fa {
+  font-size: 10px;
+  padding-left: 2px;
+  font-weight: 600;
 }
 
 #Poochcare .navbar-toggler-icon::before {
@@ -734,9 +742,15 @@ header {
 }
 
 .theme-switch-wrapper {
-  display: flex;
-  align-items: center;
+  display: inline-block;
+    position: relative;
+    width: 60px;
+    margin: 0;
+
 }
+/* .theme-switch-wrapper i{
+  color: var(--heading-color);
+} */
 
 .theme-switch-wrapper em {
   margin-left: 10px;
@@ -1155,7 +1169,7 @@ body img {
 
 /* PLAN */
 .poochcare__plan{
-  background: rgba(147, 107, 232, 0.05);
+  background: var(--bg-light);
 }
 .plan__list{
   display: grid;
@@ -1165,7 +1179,7 @@ body img {
   width: 90%;
 }
 .plan__content .plan__item{
-  background-color: #fff;
+  background-color: var(--bg-color);
   border-radius: 6px;
   align-self: center;
 }
@@ -1191,7 +1205,7 @@ body img {
   margin: 15px 0 20px;
   text-align: center;
   font-weight: 600;
-  color: #189a46;
+  color: var(--primary-color);
   font-family: "Jost", sans-serif;
 }
 .plan__top h4 label{
@@ -1229,17 +1243,18 @@ body img {
   margin-top: 2em;
 }
 .item-2 .plan__bga .plan__top{
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  background: #189a46;
-  padding: 3.5em 2.5em;
+      padding: 3em 2.5em 0.5em;
+    background: var(--primary-color);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 .item-2 .plan__bga .plan__top h4{
   color: #fff;
 }
 .item-2 .plan__bga .plan__bot{
   padding: 2em 2.5em 3.5em;
-  background-color: #ffffff;
+  background-color: var(--bg-color);
+  box-shadow: rgb(133, 132, 132);
 }
 .item-2 .plan__top h5{
   font-size: 15px;
@@ -1347,12 +1362,16 @@ body img {
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
-  color: #696969;
+  color: var(--para-color);
+}
+.footer-social a span{
+  font-size: 16px;
+    color: var(--para-color);
 }
 .poochcare__footer li a{
   font-weight: normal;
   font-size: 16px;
-  color: #696969;
+  color: var(--para-color);
   line-height: 28px;
 }
 .poochcare__footer li a:hover{
@@ -1387,11 +1406,11 @@ body img {
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
-  color: #696969;
+  color: var(--para-color);
   margin-bottom: 0;
 }
 .poochcare__footer .mid-footer p a{
-  color: #f53626;
+  color: var(--secondary-color);
   opacity: 0.9;
 }
 .poochcare__footer .mid-footer p a:hover{
