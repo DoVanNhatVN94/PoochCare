@@ -7,6 +7,7 @@
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 :root {
+  --para-color:#696969;
   --primary-color: #189A46;
   --secondary-color: #f53626;
   --font-color: #696969;
@@ -23,6 +24,7 @@
 }
 
 [data-theme="dark"] {
+  --para-color:#AFAFAF;
   --primary-color: #189A46;
   --secondary-color: #f53626;
   --font-color: #afafaf;
@@ -354,6 +356,9 @@ select {
   color: #fff;
   padding: 10px 35px;
 }
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
 
 .btn-white {
   padding: 12px 35px;
@@ -370,6 +375,27 @@ select {
   color: #189a46;
   background: #fff;
 }
+.btn-primary {
+  color: #fff;
+  background-color: #189A46;
+  border-color: #189A46;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color:#116E32;
+  border-color:#116E32;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color:#116E32;
+  border-color: #116E32;
+  box-shadow: 0 0 0 0.2rem rgba(15, 162, 67, 0.65);
+}
+
+
 
 .text-left {
   text-align: left !important;
@@ -1044,7 +1070,7 @@ body img {
 
 /* POOCHCARE__TESTIMONIALS */
 .poochcare__testimonials {
-  background: rgb(147 107 232 / 5%);
+  background: var(--bg-light);
 }
 .poochcare__testimonials .testimonial-width {
   max-width: 1050px;
@@ -1312,14 +1338,16 @@ body img {
 }
 .poochcare__updated .subscribe__form input{
   font-size: 16px;
-  color: #696969;
-  border-radius: 10px;
-  padding: 0px 20px;
-  flex-basis: 70%;
-  background: #fff;
-  height: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
+    color: var(--title-color);
+    border-radius: var(--border-radius);
+    padding: 0px 20px;
+    height: 60px;
+    flex-basis: 70%;
+    background: #fff;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
 .poochcare__updated .subscribe__form input:focus{
   border: 1px solid #189a46;
@@ -1331,6 +1359,7 @@ body img {
   background-color: #189a46;
   border-color: #189a46;
 }
+
 @media screen and (max-width: 667px) {
   .poochcare__updated .subscribe__form button{
     flex-basis: 100%;
