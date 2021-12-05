@@ -7,14 +7,15 @@
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 :root {
-  --primary-color: #189A46;
+  --para-color: #696969;
+  --primary-color: #189a46;
   --secondary-color: #f53626;
   --font-color: #696969;
   --bg-color: #fff;
   --heading-color: #000c04;
   --border-radius: 10px;
   --border-color: #ddd;
-  --border-light:#f0f3f0;
+  --border-light: #f0f3f0;
   --nav-color: #292922;
   --dropdown-color: #fff;
   --bg-light: rgba(147, 107, 232, 0.05);
@@ -23,11 +24,12 @@
 }
 
 [data-theme="dark"] {
-  --primary-color: #189A46;
+  --para-color: #afafaf;
+  --primary-color: #189a46;
   --secondary-color: #f53626;
   --font-color: #afafaf;
   --bg-color: #151515;
-  --heading-color: #000c04;
+  --heading-color: #ddd;
   --border-color: #333;
   --border-light: #444;
   --nav-color: #fff;
@@ -49,7 +51,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   background: var(--bg-color);
   color: var(--font-color);
 }
@@ -74,7 +76,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: var(--font-color);
   text-align: left;
   background-color: var(--dropdown-color);
 }
@@ -354,6 +356,12 @@ select {
   color: #fff;
   padding: 10px 35px;
 }
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
 
 .btn-white {
   padding: 12px 35px;
@@ -369,6 +377,25 @@ select {
 .border-btn:hover {
   color: #189a46;
   background: #fff;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #189a46;
+  border-color: #189a46;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #116e32;
+  border-color: #116e32;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: #116e32;
+  border-color: #116e32;
+  box-shadow: 0 0 0 0.2rem rgba(15, 162, 67, 0.65);
 }
 
 .text-left {
@@ -420,6 +447,10 @@ select {
   max-width: 100%;
   height: auto;
 }
+.radius-image {
+  border-radius: var(--border-radius);
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -610,7 +641,7 @@ a:hover {
 }
 
 /* POOCHARE__ABOUT  */
-.poochcare__about{
+.poochcare__about {
   background-color: var(--bg-light);
 }
 .poochcare__about .bottom-ab-grids.align-items-center {
@@ -688,12 +719,20 @@ header {
   transition: all 0.5s ease;
   position: relative;
 }
+
 .navbar-expand-lg .navbar-nav .nav-item .nav-link {
-  color: var(--heading-color);
+  text-transform: capitalize;
+  transition: all 0.5s ease;
   padding: 14px 0;
   font-size: 1.2em;
   font-weight: 400;
   position: relative;
+  color: var(--heading-color);
+}
+.navbar-expand-lg .navbar-nav .nav-link span.fa {
+  font-size: 10px;
+  padding-left: 2px;
+  font-weight: 600;
 }
 
 #Poochcare .navbar-toggler-icon::before {
@@ -703,7 +742,7 @@ header {
   content: "";
   width: 0;
   height: 1px;
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   display: block;
   transition: all 0.5s;
 }
@@ -734,9 +773,14 @@ header {
 }
 
 .theme-switch-wrapper {
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  margin: 0;
 }
+/* .theme-switch-wrapper i{
+  color: var(--heading-color);
+} */
 
 .theme-switch-wrapper em {
   margin-left: 10px;
@@ -849,23 +893,19 @@ input:checked + .mode-container i.gg-moon {
   display: none;
 }
 
-
-
 @media screen and (max-width: 992px) {
-
-  #Poochcare .navbar-toggler{
+  #Poochcare .navbar-toggler {
     padding: 0rem 0rem;
     border: 0 none;
     font-size: 22px;
     background-color: #189a46;
     color: #fff;
-
   }
   #Poochcare .nav-item:hover::after {
     width: 0;
   }
   #PoochNav {
-    background-color: var(--bg-color)
+    background-color: var(--bg-color);
   }
   .gg-moon {
     position: absolute;
@@ -892,7 +932,7 @@ input:checked + .mode-container i.gg-moon {
   line-height: 24.5px;
   margin: 15px 0 35px 0;
   font-family: "Jost", sans-serif;
-  color: var(--font-color)
+  color: var(--font-color);
 }
 .service__text li {
   font-style: normal;
@@ -913,7 +953,6 @@ input:checked + .mode-container i.gg-moon {
   padding: 8px;
   border-radius: 50%;
   display: inline-block;
-  
 }
 body img {
   border-radius: 10px;
@@ -1030,7 +1069,7 @@ body img {
 
 /* POOCHCARE__TESTIMONIALS */
 .poochcare__testimonials {
-  background: rgb(147 107 232 / 5%);
+  background: var(--bg-light);
 }
 .poochcare__testimonials .testimonial-width {
   max-width: 1050px;
@@ -1154,94 +1193,95 @@ body img {
 /*END POOCHCARE__TESTIMONIALS */
 
 /* PLAN */
-.poochcare__plan{
-  background: rgba(147, 107, 232, 0.05);
+.poochcare__plan {
+  background: var(--bg-light);
 }
-.plan__list{
+.plan__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 5% auto;
   margin-top: 0;
   width: 90%;
 }
-.plan__content .plan__item{
-  background-color: #fff;
+.plan__content .plan__item {
+  background-color: var(--bg-color);
   border-radius: 6px;
   align-self: center;
 }
-.plan__bg{
+.plan__bg {
   padding: 3.5em 2.5em;
   border-right: 0;
 }
-.plan__top{
+.plan__top {
   text-align: center;
 }
-.plan__top h6{
+.plan__top h6 {
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 10px;
   font-size: 25px;
   line-height: 30px;
   font-weight: 600;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
-.plan__top h4{
+.plan__top h4 {
   font-size: 40px;
   line-height: 45px;
   margin: 15px 0 20px;
   text-align: center;
   font-weight: 600;
-  color: #189a46;
+  color: var(--primary-color);
   font-family: "Jost", sans-serif;
 }
-.plan__top h4 label{
+.plan__top h4 label {
   font-size: 25px;
   vertical-align: text-top;
   font-family: "Jost", sans-serif;
   outline: none;
 }
-.plan__top h4 span{
+.plan__top h4 span {
   font-size: 16px;
   line-height: 25px;
   color: #999;
   font-weight: 400;
 }
-.plan__bot{
+.plan__bot {
   text-align: center;
   padding-top: 1em;
 }
-.plan__bot-bot ul.link{
+.plan__bot-bot ul.link {
   min-height: 120px;
 }
-.plan__bot-bot ul.link li{
+.plan__bot-bot ul.link li {
   list-style: none;
   margin-bottom: 5px;
   color: #304659;
 }
-.plan__bot-bot ul.link li p{
+.plan__bot-bot ul.link li p {
   font-size: 18px;
   line-height: 28px;
   font-weight: normal;
   align-self: center;
   padding-top: 6px;
 }
-.plan__button{
+.plan__button {
   margin-top: 2em;
 }
-.item-2 .plan__bga .plan__top{
+.item-2 .plan__bga .plan__top {
+  padding: 3em 2.5em 0.5em;
+  background: var(--primary-color);
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  background: #189a46;
-  padding: 3.5em 2.5em;
 }
-.item-2 .plan__bga .plan__top h4{
+.item-2 .plan__bga .plan__top h4 {
   color: #fff;
 }
-.item-2 .plan__bga .plan__bot{
+.item-2 .plan__bga .plan__bot {
   padding: 2em 2.5em 3.5em;
-  background-color: #ffffff;
+  background-color: var(--bg-color);
+  box-shadow: rgb(133, 132, 132);
 }
-.item-2 .plan__top h5{
+.item-2 .plan__top h5 {
   font-size: 15px;
   line-height: 20px;
   color: #189a46;
@@ -1254,23 +1294,23 @@ body img {
   background: #fff;
   border-radius: 10px;
 }
-.item-2 .plan__top h6{
+.item-2 .plan__top h6 {
   color: #fff;
 }
-.poochcare__plan .plan__list .active{
+.poochcare__plan .plan__list .active {
   z-index: 1;
   margin: 0;
   box-shadow: 0 10px 30px 0 rgb(17 17 17 / 9%);
   border-radius: 6px;
 }
+
 @media screen and (max-width: 991px) {
-  .plan__button{
+  .plan__button {
     display: none;
   }
-  
 }
 @media screen and (max-width: 800px) {
-  .plan__list{
+  .plan__list {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 30px;
@@ -1279,45 +1319,156 @@ body img {
   }
 }
 @media screen and (max-width: 568px) {
-  .plan__list{
+  .plan__list {
     grid-gap: 20px;
     margin: 30px auto;
   }
 }
 @media screen and (max-width: 768px) {
-  .plan__list{
+  .plan__list {
     width: 75%;
   }
 }
 /* END PLAN */
 
+/* POOCHCARE__NUTRITION */
+.poochcare__nutrition {
+  background: var(--bg-color);
+}
+.nutrition {
+  display: grid;
+  align-items: center;
+  padding: 2rem 0;
+}
+.nutrition-middle-section {
+  max-width: 950px;
+  margin: 0 auto;
+}
+.nutrition-middle-section h2 {
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 500;
+}
+.poochcare__nutrition span.video-play-icon {
+  background: #fff;
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  -webkit-animation: ripple 1s linear infinite;
+  animation: ripple 1s linear infinite;
+}
+.poochcare__nutrition span.video-play-icon span {
+  color: var(--primary-color);
+}
+.poochcare__nutrition span.video-play-icon:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+.poochcare__nutrition span.fa.fa-play {
+  line-height: 55px;
+}
+.poochcare__nutrition .play-view {
+  left: 0;
+  right: 0;
+  top: calc(50% - 40px);
+}
+.small-dialog {
+  margin: 40px auto;
+  position: relative;
+  bottom: -100px;
+  transition: 0.3s ease-in-out;
+}
+.small-dialog iframe {
+  height: 400px;
+  width: 100%;
+}
+.popup {
+  display: none;
+  position: fixed;
+  /* padding-top: 50px; */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.897); */
+  background-color: rgba(0, 0, 0, 0.897);
+  z-index: 1045;
+  transition: 0.3s ease-in-out;
+}
+
+.close-btn {
+  line-height: 40px;
+  position: absolute;
+  right: 25%;
+  top: -40px;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 0 18px 10px;
+  color: #fff;
+  font-style: normal;
+  font-size: 28px;
+  font-family: "Jost", sans-serif;
+  background: transparent;
+  transition: 0.3s ease-in-out;
+}
+.close-btn:hover {
+  color: #d2d2d2;
+}
+.poochcare__nutrition span.close-btn:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .poochcare__nutrition .nutrition-middle-section h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 667px) {
+  .poochcare__nutrition .nutrition-middle-section h2 {
+    font-size: 32px !important;
+    line-height: 42px;
+  }
+  .poochcare__nutrition .play-view {
+    left: 0;
+    right: 0;
+    top: calc(50% - 28px);
+  }
+}
+
+/* END POOCHCARE__NUTRITION */
+
 /* POOCHCARE__UPDATE */
-.subscribe{
+.subscribe {
   max-width: 650px;
 }
-.poochcare__updated .subscribe__form input{
+.poochcare__updated .subscribe__form input {
   font-size: 16px;
-  color: #696969;
-  border-radius: 10px;
+  color: var(--title-color);
+  border-radius: var(--border-radius);
   padding: 0px 20px;
+  height: 60px;
   flex-basis: 70%;
   background: #fff;
   height: 60px;
   padding-left: 20px;
   padding-right: 20px;
 }
-.poochcare__updated .subscribe__form input:focus{
+.poochcare__updated .subscribe__form input:focus {
   border: 1px solid #189a46;
   box-shadow: none;
 }
-.poochcare__updated .subscribe__form button{
+.poochcare__updated .subscribe__form button {
   flex-basis: 27%;
   box-shadow: none;
-  background-color: #189a46;
-  border-color: #189a46;
 }
+
 @media screen and (max-width: 667px) {
-  .poochcare__updated .subscribe__form button{
+  .poochcare__updated .subscribe__form button {
     flex-basis: 100%;
     display: block;
     width: 100%;
@@ -1329,77 +1480,84 @@ body img {
 
 /* FOOTER */
 
-.poochcare__footer{
-  background-color:#111 ;
+.poochcare__footer {
+  background-color: #111;
 }
-.poochcare__footer h6{
+.poochcare__footer h6 {
   color: #fff;
   font-size: 20px;
   line-height: 26px;
   font-weight: 600;
   margin-bottom: 25px;
 }
-.poochcare__footer li{
+.poochcare__footer li {
   list-style: none;
   margin-bottom: 5px;
 }
-.poochcare__footer li p{
+.poochcare__footer li p {
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
-  color: #696969;
+  color: var(--para-color);
 }
-.poochcare__footer li a{
+.footer-social a span {
+  font-size: 16px;
+  color: var(--para-color);
+}
+.footer-social a span:hover {
+  color:#fff;
+  transition: 0.3s ease-in;
+}
+.poochcare__footer li a {
   font-weight: normal;
   font-size: 16px;
-  color: #696969;
+  color: var(--para-color);
   line-height: 28px;
 }
-.poochcare__footer li a:hover{
+.poochcare__footer li a:hover {
   color: white;
   text-decoration: underline;
 }
-.poochcare__footer .icon{
+.poochcare__footer .icon {
   margin-top: 3px;
   padding: 0;
   list-style: none;
   overflow: hidden;
 }
-.poochcare__footer .icon li{
+.poochcare__footer .icon li {
   display: inline-block;
   margin-right: 15px;
   margin-bottom: 0;
 }
-.poochcare__footer .icon li a{
+.poochcare__footer .icon li a {
   font-weight: normal;
   font-size: 16px;
   color: #696969;
 }
-.poochcare__footer .icon li a:hover{
+.poochcare__footer .icon li a:hover {
   color: white;
   text-decoration: underline;
 }
-.poochcare__footer .mid-footer{
+.poochcare__footer .mid-footer {
   background: #111;
   border-top: 1px solid rgba(103, 99, 99, 0.14);
 }
-.poochcare__footer .mid-footer p{
+.poochcare__footer .mid-footer p {
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
-  color: #696969;
+  color: var(--para-color);
   margin-bottom: 0;
 }
-.poochcare__footer .mid-footer p a{
-  color: #f53626;
+.poochcare__footer .mid-footer p a {
+  color: var(--secondary-color);
   opacity: 0.9;
 }
-.poochcare__footer .mid-footer p a:hover{
+.poochcare__footer .mid-footer p a:hover {
   text-decoration: underline;
 }
 
 /* END FOOTER */
-
 
 /*-- container --*/
 .container {
@@ -1453,3 +1611,14 @@ body img {
 }
 
 /*-- //container --*/
+
+/* RIPPLE  */
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(15, 162, 66, 0.164), 0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25);
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25), 0 0 0 40px rgba(50, 100, 245, 0);
+  }
+}
