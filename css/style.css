@@ -1465,8 +1465,6 @@ body img {
 .poochcare__updated .subscribe__form button {
   flex-basis: 27%;
   box-shadow: none;
-  background-color: #189a46;
-  border-color: #189a46;
 }
 
 @media screen and (max-width: 667px) {
@@ -1505,6 +1503,10 @@ body img {
 .footer-social a span {
   font-size: 16px;
   color: var(--para-color);
+}
+.footer-social a span:hover {
+  color:#fff;
+  transition: 0.3s ease-in;
 }
 .poochcare__footer li a {
   font-weight: normal;
