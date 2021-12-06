@@ -1200,13 +1200,13 @@ body img {
   margin-top: 0;
   width: 90%;
 }
-.poochcare__plan .plan__text h6{
+.poochcare__plan .plan__text h6 {
   text-align: center;
-    text-transform: capitalize;
-    margin-bottom: 10px;
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
 }
 .plan__content .plan__item {
   background-color: var(--bg-color);
@@ -1588,17 +1588,17 @@ body img {
   visibility: hidden;
   /* display: none; */
 }
+
 .cd-top--is-visible {
   visibility: visible;
   opacity: 1;
   /* display: block; */
 }
-.backToTop:hover{
+.backToTop:hover {
   color: #fff;
   transform: translate3d(0, -5px, 0);
-    -webkit-transform: translate3d(0, -5px, 0);
-    transition: 0.3s ease-out;
-
+  -webkit-transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-out;
 }
 
 /*-- container --*/
