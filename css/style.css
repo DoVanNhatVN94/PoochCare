@@ -996,7 +996,7 @@ body img {
 
 /* POOCHCARE__NUMBER */
 .poochcare__number {
-  background-color: #189a46;
+  background-color: var(--primary-color);
 }
 .number__info {
   text-align: center;
