@@ -465,11 +465,11 @@ select {
   text-transform: uppercase;
   line-height: 2em;
   letter-spacing: 1px;
-  color: var(--secondary);
+  color: red;
 }
 
 .sub-title span {
-  color: var(--heading-color);
+  color: red;
 }
 .hny-title {
   font-size: 40px;
@@ -773,6 +773,15 @@ header {
 #active {
   color: var(--primary-color);
 }
+/* #Poochcare .icon-close {
+  display: none;
+} */
+#Poochcare .icon-expand {
+  display: block;
+}
+.fa-times{
+  content: "\f00d" ;
+}
 
 .theme-switch-wrapper {
   display: inline-block;
@@ -896,29 +905,34 @@ input:checked + .mode-container i.gg-moon {
 }
 
 @media screen and (max-width: 991px) {
-  #Poochcare .navbar-toggler {
-    padding: 0rem 0rem;
-    border: 0 none;
-    font-size: 22px;
+  #Poochcare .navbar-toggler-icon {
     background-color: #189a46;
     color: #fff;
+    line-height: 34px;
+    border-radius: 5px;
+  }
+  #Poochcare .navbar-toggler{
+    border: 0 none;
+    font-size: 22px;
+    padding: 0rem 0rem;
   }
   header{
     height: auto;
     padding: 15px 0;
   }
-  .mobile-position{
-    position: absolute;
-    right: 2px;
-    top: 1px;
+  #Poochcare  .mobile-position{
+    position: absolute; 
+    right: 56px;
+    top: 18px;
+    
 }
 
-@media screen and (max-width: 800px){
+/* @media screen and (max-width: 800px){
   .mobile-position{
     position: absolute;
     right: 2px;
     top: 1px;
-}
+} */
   }
   }
   #Poochcare .nav-item:hover::after {
@@ -926,12 +940,6 @@ input:checked + .mode-container i.gg-moon {
   }
   #PoochNav {
     background-color: var(--bg-color);
-  }
-  .gg-moon {
-    position: absolute;
-    right: 72px;
-    top: 22px;
-    align-self: center;
   }
 }
 /* poochcare__service */
@@ -942,7 +950,7 @@ input:checked + .mode-container i.gg-moon {
   text-transform: uppercase;
   line-height: 2em;
   letter-spacing: 1px;
-  color: var(--secondary-color);
+  color: red;
 }
 
 .service__text p {
