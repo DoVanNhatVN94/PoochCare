@@ -667,6 +667,11 @@ header {
 #Poochcare .container {
   height: auto;
 }
+#Poochcare .container{
+  align-items: center;
+ justify-content: space-around;
+}
+
 
 #Poochcare .dropdown-menu {
   border-radius: 10px;
@@ -890,13 +895,31 @@ input:checked + .mode-container i.gg-moon {
   display: none;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   #Poochcare .navbar-toggler {
     padding: 0rem 0rem;
     border: 0 none;
     font-size: 22px;
     background-color: #189a46;
     color: #fff;
+  }
+  header{
+    height: auto;
+    padding: 15px 0;
+  }
+  .mobile-position{
+    position: absolute;
+    right: 2px;
+    top: 1px;
+}
+
+@media screen and (max-width: 800px){
+  .mobile-position{
+    position: absolute;
+    right: 2px;
+    top: 1px;
+}
+  }
   }
   #Poochcare .nav-item:hover::after {
     width: 0;
