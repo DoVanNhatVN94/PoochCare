@@ -98,7 +98,7 @@
                     </nav>
                 </div>
             </nav>
-           
+
         </div>
 
     </header>
@@ -794,42 +794,45 @@
 
 
 
+
+    <!-- Thu vien JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Thu vien JQuery -->
+
     <!-- Bootstrap Js  -->
-     <!-- Thu vien JQuery -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
     <!-- Bootstrap Js  -->
 
-     <!--/MENU-JS-->
-  <script>
-    $(window).on("scroll", function () {
-      var scroll = $(window).scrollTop();
+    <!--/MENU-JS-->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
 
-      if (scroll >= 80) {
-        $("#Poochcare").addClass("nav-fixed");
-      } else {
-        $("#Poochcare").removeClass("nav-fixed");
-      }
-    });
+            if (scroll >= 80) {
+                $("#Poochcare").addClass("nav-fixed");
+            } else {
+                $("#Poochcare").removeClass("nav-fixed");
+            }
+        });
 
-    //Main navigation Active Class Add Remove
-    $(".navbar-toggler").on("click", function () {
-      $("header").toggleClass("active");
-    });
-    $(document).on("ready", function () {
-      if ($(window).width() > 991) {
-        $("header").removeClass("active");
-      }
-      $(window).on("resize", function () {
-        if ($(window).width() > 991) {
-          $("header").removeClass("active");
-        }
-      });
-    });
-  </script>
-  <!--//MENU-JS-->
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!--//MENU-JS-->
     </script>
 
     <!-- Owl Carousel Js  -->

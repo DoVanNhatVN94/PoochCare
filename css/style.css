@@ -398,7 +398,6 @@ button,
   box-shadow: 0 0 0 0.2rem rgba(15, 162, 67, 0.65);
 }
 
-
 .text-left {
   text-align: left !important;
 }
@@ -503,16 +502,17 @@ a:hover {
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
-  transition: all .5s;
-} 
+  transition: all 0.5s;
+}
 a.dropdown-item:hover {
   color: var(--primary-color);
 }
-.dropdown-item:hover, .dropdown-item:focus {
+.dropdown-item:hover,
+.dropdown-item:focus {
   color: var(--text-color);
   text-decoration: none;
   background-color: transparent;
-} 
+}
 
 /* poochcare__carousel  */
 
@@ -682,11 +682,10 @@ header {
 #Poochcare .container {
   height: auto;
 }
-#Poochcare .container{
+#Poochcare .container {
   align-items: center;
- justify-content: space-around;
+  justify-content: space-around;
 }
-
 
 #Poochcare .dropdown-menu {
   border-radius: var(--border-radius);
@@ -697,7 +696,7 @@ header {
   transform: translateX(-50px);
 }
 #Poochcare .dropdown-menu::before {
-  content: '';
+  content: "";
   width: 14px;
   height: 14px;
   background: var(--dropdown-color);
@@ -766,21 +765,21 @@ header.nav-fixed {
 }
 #Poochcare a.dropdown-item {
   font-weight: 400;
-    font-size: 1.2em;
-    position: relative;
-    color: var(--heading-color);
-    padding-top: 0;
-    display: block;
-    width: 100px;
-    padding-bottom: 14px;
+  font-size: 1.2em;
+  position: relative;
+  color: var(--heading-color);
+  padding-top: 0;
+  display: block;
+  width: 100px;
+  padding-bottom: 14px;
 }
 #Poochcare .dropdown-item::before {
   position: absolute;
-    content: '';
-    background: var(--primary-color);
-    width: 0px;
-    height: 1px;
-    bottom: 13px;
+  content: "";
+  background: var(--primary-color);
+  width: 0px;
+  height: 1px;
+  bottom: 13px;
 }
 
 #Poochcare .dropdown-item:hover::before {
@@ -793,19 +792,17 @@ header.nav-fixed {
 #Poochcare .nav-link:hover {
   color: var(--primary-color);
 }
-#Poochcare .nav-link::before{
+#Poochcare .nav-link::before {
   position: absolute;
-    content: '';
-    background: var(--primary-color);
-    width: 0px;
-    height: 1px;
-    bottom: 13px;
+  content: "";
+  background: var(--primary-color);
+  width: 0px;
+  height: 1px;
+  bottom: 13px;
 }
-#Poochcare .nav-link:hover:before{
+#Poochcare .nav-link:hover:before {
   width: 100%;
 }
-
-
 
 #active {
   color: var(--primary-color);
@@ -940,23 +937,22 @@ input:checked + .mode-container i.gg-moon {
     background-color: #189a46;
     color: #fff;
   }
-  header{
+  header {
     height: auto;
     padding: 15px 0;
   }
-  .mobile-position{
+  .mobile-position {
     position: absolute;
     right: 2px;
     top: 1px;
-}
+  }
 
-@media screen and (max-width: 800px){
-  .mobile-position{
-    position: absolute;
-    right: 2px;
-    top: 1px;
-}
-  
+  @media screen and (max-width: 800px) {
+    .mobile-position {
+      position: absolute;
+      right: 2px;
+      top: 1px;
+    }
   }
   #Poochcare .nav-item:hover::after {
     width: 0;
