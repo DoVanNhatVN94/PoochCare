@@ -12,11 +12,13 @@
     <!-- google fonts -->
 
     <!-- Font Awesome  -->
-    <link rel="stylesheet" href="./font/font-awesome.min.css">
-    <!-- Font Awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff">
+    <!-- Font Awesome  -->
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -35,73 +37,68 @@
 
 <body>
 
-     <!--header-->
-<header id="site-header" class="fixed-top">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg stroke">
-            <h1><a class="navbar-brand" href="index.html">
-                 Pooch Care
-            </a></h1>
-            <!-- if logo is image enable this   
-        <a class="navbar-brand" href="#index.html">
-            <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-        </a> -->
-            <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
-                data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-                <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-                </span>
-            </button>
-  
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Blog<span class="fa fa-angle-down"></span>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                            <a class="dropdown-item" href="blog.html">Blog Posts</a>
-                            <a class="dropdown-item" href="blog-single.html">Blog single</a>
-                             <a class="dropdown-item" href="landing-single.html">Landing Page</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- toggle switch for light and dark theme -->
-            <div class="mobile-position">
-                <nav class="navigation">
-                    <div class="theme-switch-wrapper">
-                        <label class="theme-switch" for="checkbox">
-                            <input type="checkbox" id="checkbox">
-                            <div class="mode-container">
-                                <i class="gg-sun"></i>
-                                <i class="gg-moon"></i>
+    <!--HEADER-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke">
+                <h1><a class="navbar-brand" href="index.html">
+                        Pooch Care
+                    </a></h1>
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Blog<span class="fa fa-angle-down"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <a class="dropdown-item" href="blog.html">Blog Posts</a>
+                                <a class="dropdown-item" href="blog-single.html">Blog single</a>
+                                <a class="dropdown-item" href="landing-single.html">Landing Page</a>
                             </div>
-                        </label>
-                    </div>
-                </nav>
-            </div>
-            <!-- //toggle switch for light and dark theme -->
-        </nav>
-    </div>
-  </header>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--END HEADER-->
+
     <section class="poochcare__carousel" id="home">
         <div id="slider1" class="pc_carousel_content">
             <div class="owl-carousel owl-theme ">
@@ -197,7 +194,7 @@
             </div>
         </div>
     </section>
-
+    <!-- FEATURE   -->
     <section class="poochcare__feature py-5" id="feature">
         <div class="container py-lg-5 py-md-4">
             <div class="grids-area-hny main-cont-wthree-fea row">
@@ -270,11 +267,11 @@
             </div>
         </div>
     </section>
-    <section class="poochcare__service"></section>
+    <!-- END FEATURE   -->
 
+    <!-- PORTFOLIO -->
     <section class="poochcare__portfolio">
         <div class="portfolio__content py-5">
-
             <div class="container py-md-5 py-5">
                 <div class="service__item row">
                     <div class="service__img  col-lg-6 pl-lg-5 mb-lg-0 mb-5">
@@ -318,9 +315,9 @@
             </div>
         </div>
     </section>
+    <!-- END PORTFOLIO -->
 
     <!-- NUMBER  -->
-
     <section class="poochcare__number py-5" id="number">
         <div class="container py-lg-0 py-3">
             <div class="row pb-lg-3">
@@ -343,9 +340,9 @@
             </div>
         </div>
     </section>
+    <!-- END NUMBER  -->
 
-
-
+    <!-- PLAN  -->
     <section class="poochcare__plan py-5 " id="plan">
         <div class="plan__content pt-lg-4 pt-md-3 pb-lg-5 pb-md-4">
             <div class="container">
@@ -468,8 +465,9 @@
         </div>
 
     </section>
+    <!-- END PLAN  -->
 
-
+    <!-- NUTRITION  -->
     <section class="poochcare__nutrition">
         <div class="nutrition new-block py-5">
             <div class="container py-lg-5">
@@ -509,6 +507,7 @@
             </div>
         </div>
     </section>
+    <!-- END NUTRITION  -->
 
     <!-- POOCHCARE__TESTIMONIALS  -->
     <section class="poochcare__testimonials" id="client">
@@ -655,7 +654,8 @@
         <!-- //grids -->
     </section>
     <!-- /*END POOCHCARE__TESTIMONIALS */ -->
-    <!-- Win -->
+
+    <!-- UPDATE -->
     <section class="poochcare__updated py-5">
         <div class="container py-md-4 py-3 text-center">
             <div class="row my-lg-4 mt-4">
@@ -680,7 +680,9 @@
             </div>
         </div>
     </section>
-    <!-- Win -->
+    <!-- END UPDATE -->
+
+    <!-- FOOTER  -->
     <footer class="poochcare__footer">
         <div class="footer-bg-layer">
             <div class="container py-lg-3">
@@ -785,12 +787,16 @@
             </div>
         </div>
     </footer>
+    <!-- END FOOTER  -->
 
+    <!-- BACKTOTOP  -->
     <a href="#" class="backToTop cd-top text-replace js-cd-top">&#10548</a>
+    <!-- END BACKTOTOP  -->
 
+    <!-- ADS  -->
     <div id="v-w3layouts"></div>
     <script>(function (v, d, o, ai) { ai = d.createElement('script'); ai.defer = true; ai.async = true; ai.src = v.location.protocol + o; d.head.appendChild(ai); })(window, document, './js/vdo.ai.js');</script>
-
+    <!-- END ADS  -->
 
 
 
@@ -833,7 +839,7 @@
         });
     </script>
     <!--//MENU-JS-->
-    </script>
+
 
     <!-- Owl Carousel Js  -->
     <script src="./js/owl/owl.carousel.js"></script>
@@ -914,27 +920,32 @@
         let modalBtn = document.getElementById("popup-btn");
         let modal = document.querySelector(".popup");
         let closeBtn = document.querySelector(".close-btn");
-        // Hiển thị popup khi nhấp chuột vào button
+
         modalBtn.onclick = function () {
             modal.style.display = "block"
         }
-        // Đóng popup khi ấn vào nút đóng
+
         closeBtn.onclick = function () {
             modal.style.display = "none"
         }
-        // Đóng khi nhấp chuột vào bất cứ khu vực nào trên màn hình
+
         window.onclick = function (e) {
             if (e.target == modal) {
                 modal.style.display = "none"
             }
         }
     </script>
+    <!-- POPUP  -->
+
     <!-- Themes Dark  -->
     <script src="./js/theme-change.js"></script>
+    <!-- Themes Dark  -->
 
     <!-- Back to Top -->
     <script src="./js/util.js"></script>
     <script src="./js/main.js"></script>
+    <!-- Back to Top -->
+
 </body>
 
 </html>
