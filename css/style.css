@@ -89,11 +89,11 @@ body {
   border: 1px solid #000;
 }
 
-hr {
+/* hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
-}
+} */
 
 h1,
 h2,
@@ -1169,7 +1169,7 @@ button.navbar-toggler.collapsed .icon-expand {
   top: 50%;
   transform: translateY(-50%);
 }
-.bg-mw700 {
+.poochcare__carousel__bg {
   max-width: 700px;
 }
 .poochcare__carousel h5 {
