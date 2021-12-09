@@ -1896,6 +1896,7 @@ body img {
   padding: 0;
   list-style: none;
   overflow: hidden;
+  margin-bottom: 0;
 }
 .poochcare__footer .icon li {
   display: inline-block;
